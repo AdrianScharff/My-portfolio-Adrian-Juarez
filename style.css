@@ -1,4 +1,3 @@
-/* stylelint-disable font-family-no-missing-generic-family-keyword */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
 header {
@@ -25,21 +24,6 @@ nav {
   margin-left: 65%;
 }
 
-.topim {
-  /* Vector */
-  position: absolute;
-  left: 16.67%;
-  right: 16.67%;
-  top: 50%;
-  bottom: 50%;
-
-  /* Base / 300 - Tertiary
-For small, less significant text and placeholders.
-*/
-
-  /* border: 2px solid #ACB7C3; */
-}
-
 section {
   width: 375px;
   height: 604px;
@@ -51,23 +35,16 @@ section {
 }
 
 section h1 {
-  /* Primary Text */
   width: 327px;
   height: 150px;
-
-  /* Header / 2 */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
   padding-left: 5%;
-
-  /* or 130% */
   display: flex;
   align-items: center;
-
-  /* Neutrals/N800 */
   color: #172b4d;
   margin-top: -10%;
 }
@@ -108,7 +85,6 @@ section a {
   height: 20px;
 }
 
-/* this is the second portfolio */
 body {
   overflow-x: hidden;
   overflow-y: scroll;
