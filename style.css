@@ -28,7 +28,7 @@ nav {
 section {
   width: 375px;
   height: 604px;
-  background-image: url("./images/header-shapes\ mobile.png");
+  background-image: url("./images/header-shapes\mobile.png");
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
