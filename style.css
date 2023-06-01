@@ -97,13 +97,19 @@ section a {
 .icons {
   display: flex;
   justify-content: flex-start;
-  width: 100vh;
-  gap: 30px;
-  padding-left: 5%;
+  gap: 20px;
+  margin-left: -6%;
   margin-top: 5%;
+  list-style: none;
 }
 
 .icons img {
   width: 20px;
   height: 20px;
+}
+
+/* this is the second portfolio */
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
