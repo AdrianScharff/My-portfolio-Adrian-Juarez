@@ -1,3 +1,109 @@
-h1 {
-  background-color: darkgreen;
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
+
+header {
+  display: flex;
+  align-items: center;
+  width: 375px;
+  height: 48px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+header a {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+  padding-left: 5%;
+  text-decoration: none;
+}
+
+nav {
+  margin-left: 65%;
+}
+
+.topim {
+  /* Vector */
+  position: absolute;
+  left: 16.67%;
+  right: 16.67%;
+  top: 50%;
+  bottom: 50%;
+
+  /* Base / 300 - Tertiary
+For small, less significant text and placeholders.
+*/
+
+  /* border: 2px solid #ACB7C3; */
+}
+
+section {
+  width: 375px;
+  height: 604px;
+  background-image: url("./images/header-shapes\ mobile.png");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section h1 {
+  /* Primary Text */
+  width: 327px;
+  height: 150px;
+
+  /* Header / 2 */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  padding-left: 5%;
+
+  /* or 130% */
+  display: flex;
+  align-items: center;
+
+  /* Neutrals/N800 */
+  color: #172b4d;
+  margin-top: -10%;
+}
+
+section p {
+  width: 340px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  padding-left: 5%;
+  margin-top: -10%;
+}
+
+section a {
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  padding-left: 5%;
+  text-decoration: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  width: 100vh;
+  gap: 30px;
+  padding-left: 5%;
+  margin-top: 5%;
+}
+
+.icons img {
+  width: 20px;
+  height: 20px;
 }
