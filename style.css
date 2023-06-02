@@ -94,10 +94,11 @@ body {
 .works {
   display: grid;
   justify-items: center;
+
   /* align-items: flex-start; */
   width: 23.4375rem;
   height: 2888px;
-  background: #F7F7F9;
+  background: #f7f7f9;
 }
 
 .cards {
@@ -107,21 +108,25 @@ body {
   padding: 16px;
   width: 327px;
   height: 600px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
+
   /* margin-bottom: 300px; */
 }
 
 #cardfirst {
   margin-top: 114px;
 }
+
 #cardsecond {
   margin-top: -100px;
 }
+
 #cardthird {
   margin-top: -100px;
 }
+
 #cardfourth {
   margin-top: -100px;
   margin-bottom: -60px;
@@ -142,7 +147,7 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .cards p {
@@ -158,19 +163,18 @@ body {
 
 .cards .see {
   box-sizing: border-box;
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px;
-gap: 10px;
-color: #396DF2;
-font-family: 'Poppins';
-width: 126px;
-height: 48px;
-border: 1px solid #6070FF;
-border-radius: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  color: #396df2;
+  font-family: 'Poppins';
+  width: 126px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
 }
-
 
 .about {
   display: flex;
@@ -180,7 +184,7 @@ border-radius: 8px;
   font-family: 'Poppins';
   margin-top: 4%;
   margin-left: 1.5%;
-} 
+}
 
 .about h1 {
   font-size: 2.5rem;
@@ -214,17 +218,17 @@ border-radius: 8px;
 
 .about .get {
   box-sizing: border-box;
-display: flex;
-flex-direction: row;
-align-items: center;
-padding: 12px;
-gap: 10px;
-width: 162px;
-height: 48px;
-border: 1px solid #6070FF;
-border-radius: 8px;
-color: #396DF2;
-font-family: 'Poppins';
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  width: 162px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  color: #396df2;
+  font-family: 'Poppins';
 }
 
 #wordlanguages {
@@ -270,6 +274,7 @@ font-family: 'Poppins';
 #contact {
   background-image: url("./images/shapes3contact.png"), url("./images/Contact.png");
   background-repeat: no-repeat;
+
   /* background-size: contain; */
   background-position-x: right;
   background-position-y: center;
@@ -290,10 +295,10 @@ font-family: 'Poppins';
 
 #contacttext h1 {
   font-size: 40px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 #contacttext p {
   font-size: 20px;
-  color: #EBEBFF;
+  color: #ebebff;
 }
