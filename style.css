@@ -94,8 +94,6 @@ body {
 .works {
   display: grid;
   justify-items: center;
-
-  /* align-items: flex-start; */
   width: 23.4375rem;
   height: 2888px;
   background: #f7f7f9;
@@ -139,7 +137,7 @@ body {
   align-content: center;
 }
 
-.cards h1 {
+.cards h2 {
   font-family: 'Poppins';
   width: 295px;
   height: 36px;
@@ -176,6 +174,10 @@ body {
   border-radius: 8px;
 }
 
+.see a {
+  text-decoration: none;
+}
+
 .about {
   display: flex;
   flex-direction: column;
@@ -186,7 +188,7 @@ body {
   margin-left: 1.5%;
 }
 
-.about h1 {
+.about h2 {
   font-size: 2.5rem;
 }
 
@@ -293,7 +295,7 @@ body {
   height: 48px;
 }
 
-#contacttext h1 {
+#contacttext h2 {
   font-size: 40px;
   color: #fff;
 }
