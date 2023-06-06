@@ -318,10 +318,10 @@ body {
 #name {
   width: 327px;
   height: 48px;
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
-  color: #172B4D;
+  color: #172b4d;
   font-size: 17px;
   font-family: 'Poppins';
   padding-left: 15px;
@@ -331,10 +331,10 @@ body {
 #mail {
   width: 327px;
   height: 48px;
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
-  color: #172B4D;
+  color: #172b4d;
   font-size: 17px;
   font-family: 'Poppins';
   padding-left: 15px;
@@ -344,8 +344,8 @@ body {
 #msg {
   width: 327px;
   height: 170px;
-  background: #FFFFFF;
-  border: 1px solid #CFD8DC;
+  background: #fff;
+  border: 1px solid #cfd8dc;
   border-radius: 8px;
   font-size: 15px;
   font-family: 'Poppins';
@@ -364,10 +364,10 @@ body {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-  color: #6070FF;
-  background: #FFFFFF;
+  color: #6070ff;
+  background: #fff;
   border-radius: 8px;
-  border: 1px solid #CFD8DC;
+  border: 1px solid #cfd8dc;
   cursor: pointer;
 }
 
@@ -377,11 +377,11 @@ body {
   height: 55px;
   margin-left: -10px;
   margin-top: -3px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 #butt:disabled {
-  background: #FFFFFF;
+  background: #fff;
   opacity: 0.5;
   cursor: not-allowed;
 }
