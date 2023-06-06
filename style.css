@@ -324,6 +324,8 @@ body {
   color: #172B4D;
   font-size: 17px;
   font-family: 'Poppins';
+  padding-left: 15px;
+  box-sizing: border-box;
 }
 
 #mail {
@@ -335,6 +337,8 @@ body {
   color: #172B4D;
   font-size: 17px;
   font-family: 'Poppins';
+  padding-left: 15px;
+  box-sizing: border-box;
 }
 
 #msg {
@@ -345,6 +349,8 @@ body {
   border-radius: 8px;
   font-size: 15px;
   font-family: 'Poppins';
+  padding-left: 15px;
+  box-sizing: border-box;
 }
 
 .button {
