@@ -276,8 +276,6 @@ body {
 #contact {
   background-image: url("./images/shapes3contact.png"), url("./images/Contact.png");
   background-repeat: no-repeat;
-
-  /* background-size: contain; */
   background-position-x: right;
   background-position-y: center;
   height: 779px;
@@ -290,7 +288,7 @@ body {
   position: absolute;
   text-align: center;
   margin-left: 25px;
-  margin-top: 90px;
+  margin-top: 60px;
   width: 327px;
   height: 48px;
 }
@@ -303,4 +301,81 @@ body {
 #contacttext p {
   font-size: 20px;
   color: #ebebff;
+  margin-top: -28px;
+}
+
+#contact ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 327px;
+  margin-left: -40px;
+  margin-top: 40px;
+}
+
+#name {
+  width: 327px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  color: #172B4D;
+  font-size: 17px;
+  font-family: 'Poppins';
+}
+
+#mail {
+  width: 327px;
+  height: 48px;
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  color: #172B4D;
+  font-size: 17px;
+  font-family: 'Poppins';
+}
+
+#msg {
+  width: 327px;
+  height: 170px;
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Poppins';
+}
+
+.button {
+  margin-top: -10px;
+}
+
+#butt {
+  width: 142px;
+  height: 48px;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6070FF;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: 1px solid #CFD8DC;
+  cursor: pointer;
+}
+
+#butt:hover {
+  background: rgb(8, 85, 230);
+  width: 163px;
+  height: 55px;
+  margin-left: -10px;
+  margin-top: -3px;
+  color: #FFFFFF;
+}
+
+#butt:disabled {
+  background: #FFFFFF;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
