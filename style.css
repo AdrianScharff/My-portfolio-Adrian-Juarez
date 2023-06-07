@@ -1,6 +1,7 @@
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
+/* header */
 header {
   display: flex;
   align-items: center;
@@ -25,19 +26,24 @@ nav {
   margin-left: 65%;
 }
 
+#options {
+  display: none;
+}
+
+/* main section */
 .first {
   width: 23.4375rem;
-  height: 604px;
+  height: 37.75rem;
   background-image: url("./images/header-shapes\mobile.png");
-  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-repeat: no-repeat;
 }
 
 .first h1 {
-  width: 327px;
-  height: 150px;
+  width: 20.4375rem;
+  height: 9.375rem;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -47,7 +53,6 @@ nav {
   display: flex;
   align-items: center;
   color: #172b4d;
-  margin-top: -10%;
 }
 
 .first p {
@@ -59,7 +64,6 @@ nav {
   line-height: 24px;
   color: #344563;
   padding-left: 5%;
-  margin-top: -10%;
 }
 
 .first a {
@@ -86,11 +90,13 @@ nav {
   height: 20px;
 }
 
+/* body */
 body {
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
+/* cards section */
 .works {
   display: grid;
   justify-items: center;
@@ -104,13 +110,11 @@ body {
   display: flex;
   flex-direction: column;
   padding: 16px;
-  width: 327px;
+  width: 20.4375rem;
   height: 600px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-
-  /* margin-bottom: 300px; */
 }
 
 #cardfirst {
@@ -130,11 +134,10 @@ body {
   margin-bottom: -60px;
 }
 
-.cards .left-block {
+.cards .bottom-block {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-content: center;
 }
 
 .cards h2 {
@@ -178,6 +181,7 @@ body {
   text-decoration: none;
 }
 
+/* about section */
 .about {
   display: flex;
   flex-direction: column;
@@ -195,7 +199,7 @@ body {
 .about p {
   margin-top: -30px;
   font-size: 16px;
-  width: 327px;
+  width: 20.4375rem;
 }
 
 .about a {
@@ -233,6 +237,7 @@ body {
   font-family: 'Poppins';
 }
 
+/* list of languages, frameworks and skills */
 #wordlanguages {
   margin-bottom: 30px;
 }
@@ -273,13 +278,14 @@ body {
   margin-right: 80px;
 }
 
+/* contact section */
 #contact {
   background-image: url("./images/shapes3contact.png"), url("./images/Contact.png");
   background-repeat: no-repeat;
   background-position-x: right;
   background-position-y: center;
   height: 779px;
-  width: 375px;
+  width: 23.4375rem;
   margin-top: -250px;
   font-family: 'Poppins';
 }
@@ -289,7 +295,7 @@ body {
   text-align: center;
   margin-left: 25px;
   margin-top: 60px;
-  width: 327px;
+  width: 20.4375rem;
   height: 48px;
 }
 
@@ -310,13 +316,13 @@ body {
   flex-direction: column;
   align-items: start;
   gap: 20px;
-  width: 327px;
+  width: 20.4375rem;
   margin-left: -40px;
   margin-top: 40px;
 }
 
 #name {
-  width: 327px;
+  width: 20.4375rem;
   height: 48px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -329,7 +335,7 @@ body {
 }
 
 #mail {
-  width: 327px;
+  width: 20.4375rem;
   height: 48px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -342,7 +348,7 @@ body {
 }
 
 #msg {
-  width: 327px;
+  width: 20.4375rem;
   height: 170px;
   background: #fff;
   border: 1px solid #cfd8dc;
@@ -380,8 +386,55 @@ body {
   color: #fff;
 }
 
-#butt:disabled {
-  background: #fff;
-  opacity: 0.5;
-  cursor: not-allowed;
+
+/* Media Queries */
+@media (min-width: 768px) {
+  /* header */
+  header {
+    width: 90%;
+    height: 1rem;
+    background-color: white;
+    justify-content: center;
+    gap: 60%;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header #logo {
+    margin-left: 7%;
+    font-size: 0.6rem;
+    white-space: nowrap;
+  }
+  
+  header #options {
+    display: inline-flex;
+    list-style: none;
+    gap: 1rem;
+    color: #344563;
+  }
+
+  
+
+  header .opti {
+    color: #344563;
+    font-size: 0.6rem;
+  }
+
+  /* body */
+  body {
+    background: #F4F5F7
+  }
+
+  /* main section */
+  .first {
+    width: 23.4375rem;
+    height: 604px;
+    background-image: url("./images/header-shapes\mobile.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+  }
 }
