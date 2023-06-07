@@ -309,6 +309,18 @@ body {
 
 /* 2. Pega #contact ul {} aqui debajo */
 
+#contact ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 327px;
+  margin-left: -40px;
+  margin-top: 40px;
+ }
+ 
+
 
 #name {
   width: 327px;
