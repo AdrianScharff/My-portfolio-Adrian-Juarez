@@ -376,7 +376,15 @@ body {
   cursor: pointer;
 }
 
-/* 4. Pegar el #butt:hover aqui debajo */
+#butt:hover {
+  background: rgb(8, 85, 230);
+  width: 163px;
+  height: 55px;
+  margin-left: -10px;
+  margin-top: -3px;
+  color: #fff;
+ }
+ 
 
 #butt:disabled {
   background: #fff;
