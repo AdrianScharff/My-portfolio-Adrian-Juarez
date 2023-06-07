@@ -286,7 +286,15 @@ body {
   font-family: 'Poppins';
 }
 
-/* 1. Pegar #contacttext aqui debajo */
+#contacttext {
+  position: absolute;
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 60px;
+  width: 327px;
+  height: 48px;
+ }
+ 
 
 #contacttext h2 {
   font-size: 40px;
