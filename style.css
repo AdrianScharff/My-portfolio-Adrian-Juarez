@@ -273,6 +273,8 @@ body {
   margin-right: 80px;
 }
 
+/* contact section */
+
 #contact {
   background-image: url("./images/shapes3contact.png"), url("./images/Contact.png");
   background-repeat: no-repeat;
@@ -284,14 +286,7 @@ body {
   font-family: 'Poppins';
 }
 
-#contacttext {
-  position: absolute;
-  text-align: center;
-  margin-left: 25px;
-  margin-top: 60px;
-  width: 327px;
-  height: 48px;
-}
+/* 1. Pegar #contacttext aqui debajo */
 
 #contacttext h2 {
   font-size: 40px;
@@ -304,16 +299,8 @@ body {
   margin-top: -28px;
 }
 
-#contact ul {
-  display: flex;
-  list-style: none;
-  flex-direction: column;
-  align-items: start;
-  gap: 20px;
-  width: 327px;
-  margin-left: -40px;
-  margin-top: 40px;
-}
+/* 2. Pega #contact ul {} aqui debajo */
+
 
 #name {
   width: 327px;
@@ -341,17 +328,7 @@ body {
   box-sizing: border-box;
 }
 
-#msg {
-  width: 327px;
-  height: 170px;
-  background: #fff;
-  border: 1px solid #cfd8dc;
-  border-radius: 8px;
-  font-size: 15px;
-  font-family: 'Poppins';
-  padding-left: 15px;
-  box-sizing: border-box;
-}
+/* 3. pegar #msg aqui debajo */
 
 .button {
   margin-top: -10px;
@@ -371,14 +348,7 @@ body {
   cursor: pointer;
 }
 
-#butt:hover {
-  background: rgb(8, 85, 230);
-  width: 163px;
-  height: 55px;
-  margin-left: -10px;
-  margin-top: -3px;
-  color: #fff;
-}
+/* 4. Pegar el #butt:hover aqui debajo */
 
 #butt:disabled {
   background: #fff;
