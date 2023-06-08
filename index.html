@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="desktop.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
         <a href="#" class="fa fa-bars"></a>
     </nav>
  </header>
-        <!-- this is the new portfolio -->
+        <!-- main section -->
     <section class="first">
         <h1>I'm Adrian. <br> Glad to see you </h1>
         <p>I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -28,7 +29,7 @@
             <li><a href="https://www.theodinproject.com/"> <img src="./images/Unknownicon.png" alt=""> </a></li> 
          </ul>
     </section>
-
+    <!-- cards section -->
     <section class="works">
         <div class="cards" id="cardfirst">
           <div class="orange"><img src="./images/orange.snapshot.png" alt=""></div>
@@ -41,7 +42,9 @@
                 <li><img src="./images/csstag.png" alt=""></li>
                 <li><img src="./images/javascripttag.png" alt=""></li>
             </ul>
-            <div class="see"> <a href="#">See project</a> </div>
+            <div>
+            <button class="butt">See project</button>
+            </div>
           </div>
         </div>
         <div class="cards" id="cardsecond">
@@ -55,7 +58,9 @@
                 <li><img src="./images/csstag.png" alt=""></li>
                 <li><img src="./images/javascripttag.png" alt=""></li>
             </ul>
-            <div class="see"> <a href="#">See project</a> </div>
+            <div>
+            <button class="butt">See project</button>
+            </div>
             </div>
         </div>
         <div class="cards" id="cardthird">
@@ -69,7 +74,9 @@
                 <li><img src="./images/csstag.png" alt=""></li>
                 <li><img src="./images/javascripttag.png" alt=""></li>
             </ul>
-            <div class="see"> <a href="#">See project</a> </div>
+            <div>
+            <button class="butt">See project</button>
+            </div>
             </div>
         </div>
         <div class="cards" id="cardfourth">
@@ -83,11 +90,13 @@
                 <li><img src="./images/csstag.png" alt=""></li>
                 <li><img src="./images/javascripttag.png" alt=""></li>
             </ul>
-            <div class="see"> <a href="#">See project</a> </div>
+            <div>
+            <button class="butt">See project</button>
+            </div>
             </div>
         </div>
     </section>
-
+    <!-- about section -->
     <section class="about">
       <h2>About Myself</h2>
       <p>Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -99,7 +108,10 @@
         <li><a href="https://twitter.com/CryptogodAdrian"> <img src="./images/Twittericon.png" alt=""> </a></li> 
         <li><a href="https://www.w3schools.com/"> <img src="./images/Mediumicon.png" alt=""> </a></li> 
      </ul>
-     <div class="get"> <a href="#">Get my resume</a> </div>
+     <div>
+     <button class="butt">Get my resume</button>
+     </div>
+     <!-- list of languages, frameworks and skills -->
      <ul class="list">
         <li class="languages details"> 
             <div id="wordlanguages">Languages</div>  
@@ -113,11 +125,28 @@
         <li class="details"><span class="skills">Skills<img class="arrow" src="./images/arrowright.png" alt=""></span> <img src="./images/SeparatorBottom.png"></li>
      </ul>
     </section>
+    <!-- contact section -->
     <div id="contact">
       <div id="contacttext">
         <h2>Contact me</h2>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. <br>
         I’d love to help with it!</p>
+        <form action="https://formspree.io/f/myyaqdqa" method="post">
+            <ul>
+                <li>
+                    <input type="text" id="name" name="user_name" maxlength="30" placeholder="Enter your name" required>
+                </li>
+                <li>
+                    <input type="email" id="mail" name="user_email" placeholder="Enter your email" required>
+                </li>
+                <li>
+                    <textarea  id="msg" name="user_message" cols="30" rows="10" maxlength="500" placeholder="Write your message here..." required></textarea>
+                </li>
+                <li class="button">
+                    <button class="butt" type="submit">Get in touch</button>
+                </li>
+            </ul>
+        </form>
       </div>
     </div>
 </body>

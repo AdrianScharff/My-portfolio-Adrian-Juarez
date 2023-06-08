@@ -273,11 +273,11 @@ body {
   margin-right: 80px;
 }
 
+/* contact section */
+
 #contact {
   background-image: url("./images/shapes3contact.png"), url("./images/Contact.png");
   background-repeat: no-repeat;
-
-  /* background-size: contain; */
   background-position-x: right;
   background-position-y: center;
   height: 779px;
@@ -290,7 +290,7 @@ body {
   position: absolute;
   text-align: center;
   margin-left: 25px;
-  margin-top: 90px;
+  margin-top: 60px;
   width: 327px;
   height: 48px;
 }
@@ -303,4 +303,82 @@ body {
 #contacttext p {
   font-size: 20px;
   color: #ebebff;
+  margin-top: -28px;
+}
+
+#contact ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 327px;
+  margin-left: -40px;
+  margin-top: 40px;
+}
+
+#name {
+  width: 327px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  color: #172b4d;
+  font-size: 17px;
+  font-family: 'Poppins';
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+#mail {
+  width: 327px;
+  height: 48px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  color: #172b4d;
+  font-size: 17px;
+  font-family: 'Poppins';
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+#msg {
+  width: 327px;
+  height: 170px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Poppins';
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+.butt {
+  font-family: 'Poppins';
+  font-size: 1.0625rem;
+  color: #6070ff;
+  padding: 0.75rem;
+  background: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.butt:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.butt:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+#butt:disabled {
+  background: #fff;
+  color: #5e6c84;
+  border: 1px solid #c1c7d0;
+  cursor: not-allowed;
 }
