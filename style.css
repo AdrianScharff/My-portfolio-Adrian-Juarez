@@ -355,35 +355,31 @@ body {
   box-sizing: border-box;
 }
 
-.button {
-  margin-top: -10px;
-}
-
-#butt {
-  width: 142px;
-  height: 48px;
+.butt {
   font-family: 'Poppins';
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 24px;
+  font-size: 1.0625rem;
   color: #6070ff;
+  padding: 0.75rem;
   background: #fff;
+  border: 1px solid #6070FF;
   border-radius: 8px;
-  border: 1px solid #cfd8dc;
   cursor: pointer;
 }
 
-#butt:hover {
-  background: rgb(8, 85, 230);
-  width: 163px;
-  height: 55px;
-  margin-left: -10px;
-  margin-top: -3px;
+.butt:hover {
+  background: #6070FF;
   color: #fff;
+}
+
+.butt:active {
+  background: #2230D2;
+  color: #FFFFFF;
+
 }
 
 #butt:disabled {
   background: #fff;
-  opacity: 0.5;
+  color: #5E6C84;
+  border: 1px solid #C1C7D0;
   cursor: not-allowed;
 }
