@@ -376,7 +376,7 @@ body {
   color: #fff;
 }
 
-#butt:disabled {
+.butt:disabled {
   background: #fff;
   color: #5e6c84;
   border: 1px solid #c1c7d0;
