@@ -382,3 +382,38 @@ body {
   border: 0.0625rem solid #c1c7d0;
   cursor: not-allowed;
 }
+
+@media (min-width: 768px) {
+  /* header */
+  header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  header ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+  }
+
+  header .opti {
+    font-family: 'Poppins';
+    display: flex;
+  }
+  
+  /* main section */
+  .trunk {
+    background-color: #F4F5F7;
+  }
+
+  .first {
+    width: 100%;
+    background-image: url("./images/wshapesdesk.svg"), url("./images/white-desk.png");
+    background-size: cover;
+  }
+}
