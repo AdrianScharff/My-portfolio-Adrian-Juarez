@@ -544,7 +544,12 @@ for desktop */
   .icons {
     margin-left: 0;
     margin-top: 1%;
-  }
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
 
   .icons img {
     width: 1rem;
@@ -772,7 +777,12 @@ for desktop */
     margin-left: 0;
     padding-left: 0;
     margin-top: 1rem;
-  }
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
 
   .about .get {
     padding: 0;
@@ -962,6 +972,14 @@ for desktop */
     padding-top: -11rem;
     font-size: 0.7rem;
   }
+
+  .icons:hover , .icons2:hover {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
 }
 
 @keyframes rotation {
