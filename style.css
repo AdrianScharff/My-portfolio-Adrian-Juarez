@@ -477,6 +477,10 @@ for desktop */
     justify-content: space-between;
   }
 
+  header a {
+    animation: rotation 0.5s forwards;
+  }
+
   header nav {
     display: none;
   }
@@ -957,5 +961,15 @@ for desktop */
     padding: 0.4rem;
     padding-top: -11rem;
     font-size: 0.7rem;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
