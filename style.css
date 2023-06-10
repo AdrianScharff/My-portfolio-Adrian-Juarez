@@ -477,6 +477,10 @@ for desktop */
     justify-content: space-between;
   }
 
+  header a {
+    animation: rotation 0.5s forwards;
+  }
+
   header nav {
     display: none;
   }
@@ -540,6 +544,11 @@ for desktop */
   .icons {
     margin-left: 0;
     margin-top: 1%;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
   }
 
   .icons img {
@@ -768,6 +777,11 @@ for desktop */
     margin-left: 0;
     padding-left: 0;
     margin-top: 1rem;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
   }
 
   .about .get {
@@ -957,5 +971,24 @@ for desktop */
     padding: 0.4rem;
     padding-top: -11rem;
     font-size: 0.7rem;
+  }
+
+  .icons:hover,
+  .icons2:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
