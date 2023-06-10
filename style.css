@@ -549,7 +549,7 @@ for desktop */
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
-}
+  }
 
   .icons img {
     width: 1rem;
@@ -782,7 +782,7 @@ for desktop */
     -moz-transition: all 1s;
     -ms-transition: all 1s;
     -o-transition: all 1s;
-}
+  }
 
   .about .get {
     padding: 0;
@@ -973,13 +973,14 @@ for desktop */
     font-size: 0.7rem;
   }
 
-  .icons:hover , .icons2:hover {
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
-    -moz-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    -o-transform: scale(1.5);
-}
+  .icons:hover,
+  .icons2:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
 }
 
 @keyframes rotation {
