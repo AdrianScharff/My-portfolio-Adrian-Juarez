@@ -463,7 +463,7 @@ body {
 /* media queries
 for desktop */
 
-@media (min-width: 768px) and (max-width: 1029px) {
+@media (min-width: 768px) {
   /* desktop body */
   body {
     width: 100%;
@@ -524,11 +524,13 @@ for desktop */
   .first h1 {
     font-size: 2rem;
     line-height: 3rem;
+    margin-bottom: 0;
   }
 
   .first p {
     font-size: 0.9rem;
     width: 120%;
+    margin-top: 0;
   }
 
   .first a {
@@ -583,6 +585,11 @@ for desktop */
 
   .cards p {
     font-size: 0.7rem;
+  }
+
+  .cards ul {
+    margin-left: 0;
+    padding-left: 0;
   }
 
   .cards .programs {
