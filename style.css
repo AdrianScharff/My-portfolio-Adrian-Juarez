@@ -478,7 +478,7 @@ for desktop */
   }
 
   header a {
-    animation: rotation 0.5s forwards;
+    animation: rotation 0.5s reverse;
   }
 
   header nav {
