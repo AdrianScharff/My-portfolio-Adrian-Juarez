@@ -38,8 +38,6 @@ This project is compiled using HTML & CSS.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
 - [Live Demo Link](https://adrianscharff.github.io/My-portfolio-setup/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
