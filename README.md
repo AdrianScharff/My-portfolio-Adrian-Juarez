@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 <div>
- <h3><b>My portfolio. Mobile first</b></h3>
+ <h3><b>My portfolio. Adrian Juarez</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -21,10 +21,11 @@
 - [📝 License](#license)
 - 
 <!-- PROJECT DESCRIPTION -->
-# 📖 [My portfolio. Mobile first] <a name="about-project"></a>
-> This is my second microverse project in which I set up my personal portfolio and create its mobile version.
-**My portfolio. Mobile first** is a great project to start working with html & css using Github Flow.
-This project is compiled using HTML & CSS.
+# 📖 [My portfolio. Adrian Juarez] <a name="about-project"></a>
+This is a Microverse project in which I create my personal portfolio in its mobile and desktop version.
+**My portfolio-Adrian-Juarez** is a great project to start working with HTML, CSS and JavaScript making use of the Github flow.
+This project is compiled using HTML, CSS and JavaScript.
+You can find a 5 minute outline of this project in this [video](https://www.loom.com/share/461ccaff577b435a8bbde23a1f36bb41?sid=c7d9d516-8a98-4270-9bcb-06cce8d3cc50).
 
 <!-- Features -->
 ### Key Features <a name="key-features"></a>
