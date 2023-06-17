@@ -260,6 +260,7 @@ body {
   margin-top: 0%;
   padding-top: 0%;
   margin-left: 1.5%;
+
   /* margin-bottom: 0;
   padding-bottom: 0; */
 }
@@ -267,6 +268,7 @@ body {
 .abttext {
   padding-top: 20%;
   margin-left: 3%;
+
   /* padding-bottom: 0;
   margin-bottom: 0; */
 }
@@ -361,7 +363,6 @@ body {
   align-items: center;
   justify-content: space-between;
   font-size: 1.5rem;
-
 }
 
 .skills {
@@ -369,7 +370,6 @@ body {
   align-items: center;
   justify-content: space-between;
   font-size: 1.5rem;
-
 }
 
 .arrow {
@@ -544,6 +544,7 @@ for desktop */
     height: 70vh;
     background-image: url("./images/wshapesdesk.svg"), url("./images/white-desk.png");
     background-size: cover;
+
     /* background-position: center; */
     padding-top: 0%;
     justify-content: start;
@@ -683,10 +684,6 @@ for desktop */
 
   #cardsecond .card2desk {
     display: block;
-  }
-
-  #cardsecond h2 {
-    padding-bottom: 9%;
   }
 
   .canopymobile2y3 {
