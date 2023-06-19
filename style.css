@@ -24,9 +24,8 @@ header a {
 }
 
 .hamburger {
-  margin-left: 86%;
-  display: block;
-  width: 1.4rem;
+  margin-left: 89%;
+  width: 1.2rem;
   height: 1.4rem;
   display: flex;
   flex-direction: column;
@@ -38,37 +37,49 @@ header a {
 }
 
 .hamburger .bar {
-  background-color: #ff8d60;
+  background-color: #6070FF;
   height: 0.1rem;
   width: 100%;
 }
 
-.hamburger .bar-1 {
-  transform: translateY(0.58rem) rotate(45deg);
+.hamburger.white.bar {
+  background-color: #FFFFFF;
 }
 
-.hamburger .bar-2 {
+.hamburger.active .bar-1 {
+  transition: 2s;
+  transform: translateY(0.58rem) rotate(45deg);
+  background-color: #FFFFFF;
+}
+
+.hamburger.active .bar-2 {
   opacity: 0;
 }
 
-.hamburger .bar-3 {
+.hamburger.active .bar-3 {
+  transition: 2s;
   transform: rotate(-45deg);
+  background-color: #FFFFFF;
 }
 
 .fullMenu {
   position: absolute;
+  display: none;
+}
+
+.fullMenu.active {
+  display: block;
   background-color: #001aff9f;
   z-index: 6;
-  height: 99%;
+  height: 100%;
   width: 100%;
   top: 0;
   position: fixed;
-  backdrop-filter: blur(8px); 
+  backdrop-filter: blur(8px);
 }
 
 .fullMenuOptions {
   list-style: none;
-
   margin-top: 30%;
   display: flex;
   flex-direction: column;
@@ -91,7 +102,6 @@ header ul {
 }
 
 .first {
-  position: relative;
   width: 100%;
   height: 69vh;
   background-color: #fff;
@@ -572,7 +582,11 @@ for desktop */
     animation: rotation 0.5s reverse;
   }
 
-  header nav {
+  .hamburger {
+    display: none;
+  }
+
+  .fullMenu.active {
     display: none;
   }
 
