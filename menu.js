@@ -36,6 +36,9 @@ function chameleon () {
     })
   }
 }
+
+window.addEventListener("scroll", chameleon);
+
   
 
 // This is for the Pop Up Windows
