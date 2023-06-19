@@ -28,7 +28,7 @@ function chameleon() {
 
   if (scrollPosition >= contactSectionPosition) {
     hamburgerBars.forEach((bar) => {
-      bar.style.backgroundColor = 'white';
+      bar.style.backgroundColor = 'black';
     });
   } else {
     hamburgerBars.forEach((bar) => {

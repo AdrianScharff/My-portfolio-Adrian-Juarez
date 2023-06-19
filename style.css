@@ -564,9 +564,8 @@ for desktop */
 
   /* desktop header */
   header {
-    margin-top: 0;
+    margin: 1% auto;
     padding-top: 0;
-    margin-bottom: 0;
     padding-bottom: 0;
     width: 100%;
     height: 10%;
@@ -865,7 +864,7 @@ for desktop */
 
   .abttext {
     margin-top: 0;
-    margin-bottom: 18%;
+    margin-bottom: 33%;
     margin-left: 0;
     height: 20rem;
     width: 35%;
