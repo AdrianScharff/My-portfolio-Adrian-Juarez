@@ -42,10 +42,6 @@ header a {
   width: 100%;
 }
 
-.hamburger.white.bar {
-  background-color: #FFFFFF;
-}
-
 .hamburger.active .bar-1 {
   transition: 2s;
   transform: translateY(0.58rem) rotate(45deg);
