@@ -12,10 +12,13 @@
 </head>
 
 <body>
+    <div class="headerAndMain">
     <header>
         <a href="#">My logo</a>
-        <nav>
-            <a href="#" class="fa fa-bars"></a>
+        <nav class="hamburger">
+              <div class="bar bar-1"></div>
+              <div class="bar bar-2"></div>
+              <div class="bar bar-3"></div>
         </nav>
         <ul>
             <li class="opti">Portfolio</li>
@@ -23,6 +26,13 @@
             <li class="opti">Contact</li>
         </ul>
     </header>
+    <div class="fullMenu">
+        <ul class="fullMenuOptions">
+            <li><a href="#myPortfolio">Portfolio</a></li>
+            <li><a href="#myAbout">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
     <!-- main section -->
     <section class="trunk">
         <section class="first">
@@ -47,9 +57,9 @@
                 </div>
             </div>
         </section>
-
+</div>
         <!-- cards section -->
-        <section class="works">
+        <section class="works" id="myPortfolio">
             <!-- first card -->
             <div class="cards" id="cardfirst">
                 <div class="orange">
@@ -159,7 +169,7 @@
         </section>
 
         <!-- about section -->
-        <section class="about">
+        <section class="about" id="myAbout">
             <div id="entireaboutcontent">
             <section class="abttext">
                 <h2>About Myself</h2>
@@ -242,6 +252,7 @@
             </form>
         </div>
     </div>
+    <script src="menu.js"></script>
 </body>
 
 </html>
