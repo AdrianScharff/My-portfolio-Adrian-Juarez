@@ -1,3 +1,5 @@
+// This is for the menu
+
 let hamburger = document.querySelector(".hamburger");
 let fullMenu = document.querySelector(".fullMenu");
 
@@ -17,22 +19,10 @@ function linkCloseTheBlue() {
 
 fullMenuLink.forEach(n => n.addEventListener("click", linkCloseTheBlue));
 
-let contactSection = document.querySelector("#contact");
-let hamburgerBars = document.querySelectorAll(".bar")
+// insertar cambio 2 aqui debajo y borrar comentario
 
-function chameleon () {
-    let scrollPosition = window.scrollY || window.pageYOffset;
-    let contactSectionPosition = contactSection.offsetTop;
+// insertar cambio 3 aqui debajo y borrar comentario
 
-    if (scrollPosition >= contactSectionPosition) {
-        hamburgerBars.forEach(function(bar) {
-        bar.style.backgroundColor = "white"
-        });
-    } else {
-        hamburgerBars.forEach(function(bar) {
-          bar.style.removeProperty('background-color');
-        })
-    }
-}
 
-window.addEventListener("scroll", chameleon);
+// This is for the Pop Up Windows
+
