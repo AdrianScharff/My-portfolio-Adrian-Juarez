@@ -7,7 +7,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* border: 0.2px solid red; */
 }
 
 header {
@@ -328,7 +327,6 @@ body {
   font-family: 'Poppins';
   margin-top: 0%;
   padding-top: 0%;
-  /* margin-left: 1.5%; */
 }
 
 .abttext {
@@ -472,7 +470,7 @@ body {
 #contacttext p {
   font-size: 1.15rem;
   color: #ebebff;
-  margin-top: 0rem;
+  margin-top: 0;
 }
 
 #contact ul {
