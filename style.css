@@ -82,7 +82,12 @@ header a {
   gap: 2rem;
 }
 
-/* Insertar cambio 1 aqui debajo y borrar comentario */
+.fullMenuOptions a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 2.3rem;
+  font-weight: 501;
+}  
 
 header ul {
   display: none;
