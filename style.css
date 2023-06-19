@@ -17,7 +17,7 @@ header a {
   font-style: normal;
   font-weight: 700;
   font-size: 1.3rem;
-  color: #6070FF;
+  color: #6070ff;
   padding-left: 7%;
   text-decoration: none;
   white-space: nowrap;
@@ -37,7 +37,7 @@ header a {
 }
 
 .hamburger .bar {
-  background-color: #6070FF;
+  background-color: #6070ff;
   height: 0.1rem;
   width: 100%;
 }
@@ -45,7 +45,7 @@ header a {
 .hamburger.active .bar-1 {
   transition: 2s;
   transform: translateY(0.58rem) rotate(45deg);
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 .hamburger.active .bar-2 {
@@ -55,7 +55,7 @@ header a {
 .hamburger.active .bar-3 {
   transition: 2s;
   transform: rotate(-45deg);
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 .fullMenu {
@@ -84,10 +84,10 @@ header a {
 
 .fullMenuOptions a {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #fff;
   font-size: 2.3rem;
   font-weight: 501;
-}  
+}
 
 header ul {
   display: none;
