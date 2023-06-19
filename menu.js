@@ -19,7 +19,8 @@ function linkCloseTheBlue() {
 
 fullMenuLink.forEach(n => n.addEventListener("click", linkCloseTheBlue));
 
-// insertar cambio 2 aqui debajo y borrar comentario
+let contactSection = document.querySelector("#contact");
+let hamburgerBars = document.querySelectorAll(".bar")
 
 // insertar cambio 3 aqui debajo y borrar comentario
 
