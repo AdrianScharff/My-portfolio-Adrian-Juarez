@@ -31,7 +31,7 @@ header {
   height: 10%;
   padding-top: 4%;
   padding-bottom: 4%;
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 header a {
@@ -298,7 +298,7 @@ header ul {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #fff;
   border-top-right-radius: 8rem;
   height: 85.9375rem;
   font-family: 'Poppins';
