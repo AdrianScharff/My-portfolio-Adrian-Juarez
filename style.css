@@ -26,6 +26,24 @@ body {
   background-color: #f7f7f9;
 }
 
+.main {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Elo {
+  color: yellow;
+  /* margin-top: 0;
+  padding-top: 0; */
+  
+}
+
 /* Mobile Header Section */
 
 header {
@@ -191,6 +209,7 @@ header ul {
 .works {
   display: grid;
   justify-items: center;
+  align-items: start;
   width: 100%;
   height: 230rem;
   background: #f7f7f9;
