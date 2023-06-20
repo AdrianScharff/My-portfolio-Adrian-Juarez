@@ -1,8 +1,6 @@
 /* stylelint-disable font-family-no-missing-generic-family-keyword */
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,700,900');
 
-/* mobile header section */
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -20,9 +18,15 @@ body {
   background-color: #f7f7f9;
 }
 
+.trunk {
+  background-color: #f7f7f9;
+}
+
 .headerAndMain {
   background-color: #f7f7f9;
 }
+
+/* Mobile Header Section */
 
 header {
   display: flex;
@@ -116,9 +120,7 @@ header ul {
   display: none;
 }
 
-.trunk {
-  background-color: #f7f7f9;
-}
+/* Mobile Main Section */
 
 .first {
   width: 100%;
@@ -184,7 +186,7 @@ header ul {
   height: 1.15rem;
 }
 
-/* mobile cards section */
+/* Mobile Cards Section */
 
 .works {
   display: grid;
@@ -226,7 +228,9 @@ header ul {
   gap: 1rem;
 }
 
-.cards h2 {
+/* Mobile Cards Left Block Items */
+
+.cards .titleMobile {
   font-family: 'Poppins';
   height: 2.25rem;
   font-weight: 700;
@@ -235,16 +239,27 @@ header ul {
   color: #172b4d;
 }
 
-.titleDesk3And4 {
+.cards .titleDesk {
   display: none;
 }
 
-.cards p {
-  font-family: 'Poppins';
+.canopyMobile.multiPost {
+  padding-top: 3rem;
+}
+
+.canopyDesk {
+  display: none;
+}
+
+.parrMobile {
   font-size: 1.08rem;
 }
 
-.cards ul {
+.parrDesk {
+  display: none;
+}
+
+.cards .tags {
   display: flex;
   list-style: none;
   margin-left: 0;
@@ -252,47 +267,11 @@ header ul {
   gap: 0.3125rem;
 }
 
-/* mobile individual cards */
-
-/* mobile second individual card */
-
-.canopydesk2y3 {
+.progDesk {
   display: none;
 }
 
-.rubydesk234 {
-  display: none;
-}
-
-#parr2desk {
-  display: none;
-}
-
-.cansec {
-  padding-top: 3rem;
-}
-
-/* mobile third individual card */
-
-#parr3desk {
-  display: none;
-}
-
-/* mobile fourth individual card */
-
-.canopydesk4 {
-  display: none;
-}
-
-#parr4desk {
-  display: none;
-}
-
-.canopymobile4 {
-  padding-top: 3rem;
-}
-
-/* mobile about section */
+/* Mobile About Section */
 
 .about {
   display: flex;
@@ -530,16 +509,16 @@ header ul {
   cursor: not-allowed;
 }
 
-/* media queries
-for desktop */
+/* Media Queries
+For Desktop */
 
 @media (min-width: 768px) {
-  /* desktop body */
+  /* Desktop Body */
   body {
     width: 100%;
   }
 
-  /* desktop header */
+  /* Desktop Header Section */
   header {
     padding: 1% auto;
     width: 100%;
@@ -572,7 +551,7 @@ for desktop */
     font-size: 1rem;
   }
 
-  /* desktop main section */
+  /* Desktop Main Section */
   .trunk {
     background-color: #f4f5f7;
     width: 100%;
@@ -635,7 +614,7 @@ for desktop */
     -o-transition: all 0.5s;
   }
 
-  /* desktop cards section */
+  /* Desktop Cards Section */
 
   .works {
     display: grid;
@@ -658,6 +637,10 @@ for desktop */
     height: 27rem;
   }
 
+  .deskReverse {
+    flex-direction: row-reverse;
+  }
+
   .mobileImage {
     display: none;
   }
@@ -666,27 +649,6 @@ for desktop */
     display: block;
     width: 19rem;
     height: 17rem;
-  }
-
-  .cards h2 {
-    font-size: 1.5rem;
-  }
-
-  .cards .canopy {
-    height: 1.8rem;
-  }
-
-  .cards p {
-    font-size: 0.7rem;
-  }
-
-  .cards ul {
-    margin-left: 0;
-    padding-left: 0;
-  }
-
-  .cards .programs {
-    height: 0.94rem;
   }
 
   .cards .left-block {
@@ -698,83 +660,52 @@ for desktop */
     gap: 0;
   }
 
-  /* desktop individual cards */
+  /* Desktop Cards Left Block Items */
 
-  /* desktop second individual card */
-
-  #cardsecond {
-    flex-direction: row-reverse;
+  .cards .titleDesk {
+    display: block;
+    font-size: 1.5rem;
   }
 
-  .canopymobile2y3 {
+  .cards .titleMobile {
     display: none;
   }
 
-  .canopydesk2y3 {
-    display: block;
-  }
-
-  #parr2mobile {
+  .canopyMobile {
     display: none;
   }
 
-  #parr2desk {
+  .canopyDesk {
+    display: block;
+    height: 1.8rem;
+  }
+
+  .cards p {
+    font-size: 0.7rem;
+  }
+
+  .parrMobile {
+    display: none;
+  }
+
+  .parrDesk {
     display: block;
   }
 
-  .rubydesk234 {
+  .cards ul {
+    margin-left: 0;
+    padding-left: 0;
+  }
+
+  .cards .programs {
+    height: 0.94rem;
+  }
+
+  .progDesk {
     display: inline;
   }
 
-  /* desktop third individual card */
-
-  #h23mobile {
-    display: none;
-  }
-
-  #h23desk {
-    display: block;
-  }
-
-  #parr3mobile {
-    display: none;
-  }
-
-  #parr3desk {
-    display: block;
-  }
-
-  /* desktop fourth individual card */
-
-  #cardfourth {
-    flex-direction: row-reverse;
-  }
-
-  #h24mobile {
-    display: none;
-  }
-
-  #h24desk {
-    display: block;
-  }
-
-  .canopymobile4 {
-    display: none;
-  }
-
-  .canopydesk4 {
-    display: block;
-  }
-
-  #parr4mobile {
-    display: none;
-  }
-
-  #parr4desk {
-    display: block;
-  }
-
-  /* desktop about section */
+  /* Desktop About Section */
 
   .about {
     width: 100%;
