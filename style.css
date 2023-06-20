@@ -13,13 +13,25 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: 'Poppins';
+  background-color: #f7f7f9;
+}
+
+.headerAndMain {
+  background-color: #f7f7f9;
+}
+
 header {
   display: flex;
   align-items: center;
   width: 100%;
   height: 10%;
-  margin-top: 4%;
-  margin-bottom: 6%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #FFFFFF;
 }
 
 header a {
@@ -119,6 +131,7 @@ header ul {
   display: flex;
   flex-direction: column;
   padding-top: 27%;
+  margin-bottom: 50%;
   align-items: start;
 }
 
@@ -171,12 +184,6 @@ header ul {
   height: 1.15rem;
 }
 
-body {
-  overflow-x: hidden;
-  overflow-y: scroll;
-  font-family: 'Poppins';
-}
-
 /* mobile cards section */
 
 .works {
@@ -186,6 +193,8 @@ body {
   height: 230rem;
   background: #f7f7f9;
   gap: 5%;
+  margin-top: 7.125rem;
+  margin-bottom: 30%;
 }
 
 .cards {
@@ -198,13 +207,15 @@ body {
   background: #fff;
   border: 0.0625rem solid #dfe1e6;
   border-radius: 1rem;
+  margin-top: -6.25rem;
 }
 
-.card1mobile,
-.card2mobile,
-.card3mobile,
-.card4mobile {
+.mobileImage {
   width: 100%;
+}
+
+.deskImage {
+  display: none;
 }
 
 .cards .left-block {
@@ -212,6 +223,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: start;
+  gap: 1rem;
 }
 
 .cards h2 {
@@ -221,6 +233,10 @@ body {
   font-size: 2.5rem;
   line-height: 2.75rem;
   color: #172b4d;
+}
+
+.titleDesk3And4 {
+  display: none;
 }
 
 .cards p {
@@ -238,24 +254,7 @@ body {
 
 /* mobile individual cards */
 
-#cardfirst {
-  /* margin-top: 7.125rem; */
-}
-
-.card1desk {
-  display: none;
-}
-
 /* mobile second individual card */
-
-#cardsecond {
-  margin-top: -6.25rem;
-  height: 115%;
-}
-
-.card2desk {
-  display: none;
-}
 
 .canopydesk2y3 {
   display: none;
@@ -275,37 +274,11 @@ body {
 
 /* mobile third individual card */
 
-#cardthird {
-  margin-top: -6.25rem;
-}
-
-.card3desk {
-  display: none;
-}
-
-#h23desk {
-  display: none;
-}
-
 #parr3desk {
   display: none;
 }
 
 /* mobile fourth individual card */
-
-#cardfourth {
-  margin-top: -6.25rem;
-  margin-bottom: 10%;
-  height: 105%;
-}
-
-.card4desk {
-  display: none;
-}
-
-#h24desk {
-  display: none;
-}
 
 .canopydesk4 {
   display: none;
@@ -325,7 +298,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: white;
+  background-color: #FFFFFF;
   border-top-right-radius: 8rem;
   height: 85.9375rem;
   font-family: 'Poppins';
@@ -568,9 +541,7 @@ for desktop */
 
   /* desktop header */
   header {
-    margin: 1% auto;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 1% auto;
     width: 100%;
     height: 10%;
     display: flex;
@@ -612,11 +583,10 @@ for desktop */
     height: 70vh;
     background-image: url("./images/wshapesdesk.svg"), url("./images/white-desk.png");
     background-size: cover;
-
-    /* background-position: center; */
     padding-top: 0%;
     justify-content: start;
     align-items: start;
+    margin-bottom: 20%;
   }
 
   .Myinfo {
@@ -673,6 +643,9 @@ for desktop */
     align-items: start;
     width: 100%;
     height: 150rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
   }
 
   .cards {
@@ -682,13 +655,15 @@ for desktop */
     align-items: center;
     width: 80%;
     padding-top: 0;
+    height: 27rem;
   }
 
-  /* .cardscontent {
-    margin-top: 0;
-  } */
+  .mobileImage {
+    display: none;
+  }
 
-  .cards .sample {
+  .deskImage {
+    display: block;
     width: 19rem;
     height: 17rem;
   }
@@ -725,33 +700,10 @@ for desktop */
 
   /* desktop individual cards */
 
-  /* desktop first individual card */
-
-  #cardfirst {
-    height: 27rem;
-  }
-
-  #cardfirst .card1mobile {
-    display: none;
-  }
-
-  #cardfirst .card1desk {
-    display: block;
-  }
-
   /* desktop second individual card */
 
   #cardsecond {
     flex-direction: row-reverse;
-    height: 27rem;
-  }
-
-  #cardsecond .card2mobile {
-    display: none;
-  }
-
-  #cardsecond .card2desk {
-    display: block;
   }
 
   .canopymobile2y3 {
@@ -776,18 +728,6 @@ for desktop */
 
   /* desktop third individual card */
 
-  #cardthird {
-    height: 27rem;
-  }
-
-  #cardthird .card3mobile {
-    display: none;
-  }
-
-  #cardthird .card3desk {
-    display: block;
-  }
-
   #h23mobile {
     display: none;
   }
@@ -808,16 +748,6 @@ for desktop */
 
   #cardfourth {
     flex-direction: row-reverse;
-    height: 27rem;
-    margin-bottom: 0%;
-  }
-
-  #cardfourth .card4mobile {
-    display: none;
-  }
-
-  #cardfourth .card4desk {
-    display: block;
   }
 
   #h24mobile {
