@@ -9,6 +9,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -235,7 +239,7 @@ body {
 /* mobile individual cards */
 
 #cardfirst {
-  margin-top: 7.125rem;
+  /* margin-top: 7.125rem; */
 }
 
 .card1desk {
