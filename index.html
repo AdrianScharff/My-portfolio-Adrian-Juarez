@@ -12,10 +12,13 @@
 </head>
 
 <body>
+    <div class="headerAndMain">
     <header>
         <a href="#">My logo</a>
-        <nav>
-            <a href="#" class="fa fa-bars"></a>
+        <nav class="hamburger">
+              <div class="bar bar-1"></div>
+              <div class="bar bar-2"></div>
+              <div class="bar bar-3"></div>
         </nav>
         <ul>
             <li class="opti">Portfolio</li>
@@ -23,6 +26,13 @@
             <li class="opti">Contact</li>
         </ul>
     </header>
+    <div class="fullMenu">
+        <ul class="fullMenuOptions">
+            <li><a class="fullMenuLink" href="#myPortfolio">Portfolio</a></li>
+            <li><a class="fullMenuLink" href="#myAbout">About</a></li>
+            <li><a class="fullMenuLink" href="#contact">Contact</a></li>
+        </ul>
+    </div>
     <!-- main section -->
     <section class="trunk">
         <section class="first">
@@ -47,14 +57,14 @@
                 </div>
             </div>
         </section>
-
+</div>
         <!-- cards section -->
-        <section class="works">
+        <section class="works" id="myPortfolio">
             <!-- first card -->
             <div class="cards" id="cardfirst">
                 <div class="orange">
-                    <img class="card1mobile" src="./images/orange.snapshot.png" alt="">
-                    <img class="sample card1desk" src="./images/card1desk .png" alt="">
+                    <img class="mobileImage" src="./images/orange.snapshot.png" alt="">
+                    <img class="deskImage" src="./images/card1desk .png" alt="">
                 </div>
                 <div class="left-block">
                     <h2>Tonic</h2>
@@ -74,8 +84,8 @@
             <!-- second card -->
             <div class="cards" id="cardsecond">
                 <div class="beige">
-                    <img class="card2mobile" src="./images/Beige.snapshot.png" alt="">
-                    <img class="sample card2desk" src="./images/card2desk.png" alt="">
+                    <img class="mobileImage" src="./images/Beige.snapshot.png" alt="">
+                    <img class="deskImage" src="./images/card2desk.png" alt="">
                 </div>
                 <div class="left-block">
                     <h2>Multi-Post Stories</h2>
@@ -102,12 +112,12 @@
             <!-- third card -->
             <div class="cards" id="cardthird">
                 <div class="shiny">
-                    <img class="card3mobile" src="./images/shinyorange.snapshot.png" alt="">
-                    <img class="sample card3desk" src="./images/card3desk.png" alt="">
+                    <img class="mobileImage" src="./images/shinyorange.snapshot.png" alt="">
+                    <img class="deskImage" src="./images/card3desk.png" alt="">
                 </div>
                 <div class="left-block">
-                    <h2 id="h23mobile">Tonic</h2>
-                    <h2 id="h23desk">Facebook 360</h2>
+                    <h2 id="titleMobile3And4">Tonic</h2>
+                    <h2 class="titleDesk3And4">Facebook 360</h2>
                     <div>
                         <img class="canopymobile2y3" src="./images/Frame 2.png" alt="">
                         <img class="canopy canopydesk2y3" src="./images/canopydesk2&3.png" alt="">
@@ -131,12 +141,12 @@
             <!-- fourth card -->
             <div class="cards" id="cardfourth">
                 <div class="white">
-                    <img class="card4mobile" src="./images/white.snapshot.png" alt="">
-                    <img class="sample card4desk" src="./images/card4desk.png" alt="">
+                    <img class="mobileImage" src="./images/white.snapshot.png" alt="">
+                    <img class="deskImage" src="./images/card4desk.png" alt="">
                 </div>
                 <div class="left-block">
-                    <h2 id="h24mobile">Multi-Post Stories</h2>
-                    <h2 id="h24desk">Uber Navigation</h2>
+                    <h2 id="titleMobile3And4">Multi-Post Stories</h2>
+                    <h2 class="titleDesk3And4">Uber Navigation</h2>
                     <div>
                         <img class="canopymobile4" src="./images/Frame 2.png" alt="">
                         <img class="canopy canopydesk4" src="./images/canopydesk4.png" alt="">
@@ -159,7 +169,7 @@
         </section>
 
         <!-- about section -->
-        <section class="about">
+        <section class="about" id="myAbout">
             <div id="entireaboutcontent">
             <section class="abttext">
                 <h2>About Myself</h2>
@@ -242,6 +252,7 @@
             </form>
         </div>
     </div>
+    <script src="menu.js"></script>
 </body>
 
 </html>
