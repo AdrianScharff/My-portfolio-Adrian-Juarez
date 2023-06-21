@@ -43,129 +43,141 @@ window.addEventListener('scroll', chameleon);
 
 // This is for the Pop Up Windows
 
-const works = document.querySelector('.cardsSection');
-const cardOne = document.createElement('div');
-works.appendChild(cardOne);
-cardOne.innerHTML = `
-<h1 class="Elo" > Ellooooooooo </h1>
-`;
-
-const projects = [
-const card1 = {
+const cardProperties = [
+  {
     name: "Tonic",
+    reversed: false,
     frame: "./images/Frame 2.png",
     image: "./images/orange.snapshot.png",
     imageForDesk: "./images/card1desk .png",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et aut, explicabo aspernatur sint asperiores mollitia quaerat iure deleniti distinctio impedit maxime at harum ab dolorum necessitatibus ipsum quibusdam, saepe odit nihil temporibus. Architecto, assumenda. Provident maxime, delectus iste facilis ducimus ratione accusantium, eum optio dolorum obcaecati, iusto distinctio atque perspiciatis ab dolorem veritatis exercitationem ipsum quisquam. Quaerat, error obcaecati.",
-    longDescription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta assumenda accusamus porro praesentium consequuntur possimus optio provident! Quod quia, quaerat eaque officia quas libero autem facilis explicabo excepturi enim mollitia recusandae, ipsum blanditiis nemo eos porro doloribus doloremque iusto sed, minima aperiam architecto adipisci harum modi? Ipsa quisquam aperiam fuga non dolorum delectus! Incidunt quos dolorum deleniti eum cumque nemo, error reprehenderit facilis, quasi aperiam odio.",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    longDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ["./images/htmltag.png", "./images/csstag.png", "./images/javascripttag.png"],
     live: "https://www.google.com/",
     source: "https://github.com/",
-}
+  },
 
-const card2 = {
+  {
     name: "Mult-Post Stories",
+    reversed: true,
     frame: "./images/canopydesk2&3.png",
     image: "./images/Beige.snapshot.png",
     imageForDesk: "./images/card2desk.png",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et aut, explicabo aspernatur sint asperiores mollitia quaerat iure deleniti distinctio impedit maxime at harum ab dolorum necessitatibus ipsum quibusdam, saepe odit nihil temporibus. Architecto, assumenda. Provident maxime, delectus iste facilis ducimus ratione accusantium, eum optio dolorum obcaecati, iusto distinctio atque perspiciatis ab dolorem veritatis exercitationem ipsum quisquam. Quaerat, error obcaecati.",
-    longDescription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta assumenda accusamus porro praesentium consequuntur possimus optio provident! Quod quia, quaerat eaque officia quas libero autem facilis explicabo excepturi enim mollitia recusandae, ipsum blanditiis nemo eos porro doloribus doloremque iusto sed, minima aperiam architecto adipisci harum modi? Ipsa quisquam aperiam fuga non dolorum delectus! Incidunt quos dolorum deleniti eum cumque nemo, error reprehenderit facilis, quasi aperiam odio.",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    longDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ["./images/htmltag.png", "./images/rubydesk23&4.png", "./images/csstag.png", "./images/javascripttag.png"],
     live: "https://www.google.com/",
     source: "https://github.com/",
-}
+  },
 
-const card3 = {
+  {
     name: "Facebook 360",
+    reversed: false,
     frame: "./images/canopydesk2&3.png",
     image: "./images/shinyorange.snapshot.png",
     imageForDesk: "./images/card3desk.png",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et aut, explicabo aspernatur sint asperiores mollitia quaerat iure deleniti distinctio impedit maxime at harum ab dolorum necessitatibus ipsum quibusdam, saepe odit nihil temporibus. Architecto, assumenda. Provident maxime, delectus iste facilis ducimus ratione accusantium, eum optio dolorum obcaecati, iusto distinctio atque perspiciatis ab dolorem veritatis exercitationem ipsum quisquam. Quaerat, error obcaecati.",
-    longDescription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta assumenda accusamus porro praesentium consequuntur possimus optio provident! Quod quia, quaerat eaque officia quas libero autem facilis explicabo excepturi enim mollitia recusandae, ipsum blanditiis nemo eos porro doloribus doloremque iusto sed, minima aperiam architecto adipisci harum modi? Ipsa quisquam aperiam fuga non dolorum delectus! Incidunt quos dolorum deleniti eum cumque nemo, error reprehenderit facilis, quasi aperiam odio.",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    longDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ["./images/htmltag.png", "./images/rubydesk23&4.png", "./images/csstag.png", "./images/javascripttag.png"],
     live: "https://www.google.com/",
     source: "https://github.com/",
-}
+  },
 
-const card4 = {
+  {
     name: "Uber Navigation",
+    reversed: true,
     frame: "./images/canopydesk4.png",
     image: "./images/white.snapshot.png",
     imageForDesk: "./images/card4desk.png",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et aut, explicabo aspernatur sint asperiores mollitia quaerat iure deleniti distinctio impedit maxime at harum ab dolorum necessitatibus ipsum quibusdam, saepe odit nihil temporibus. Architecto, assumenda. Provident maxime, delectus iste facilis ducimus ratione accusantium, eum optio dolorum obcaecati, iusto distinctio atque perspiciatis ab dolorem veritatis exercitationem ipsum quisquam. Quaerat, error obcaecati.",
-    longDescription: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta assumenda accusamus porro praesentium consequuntur possimus optio provident! Quod quia, quaerat eaque officia quas libero autem facilis explicabo excepturi enim mollitia recusandae, ipsum blanditiis nemo eos porro doloribus doloremque iusto sed, minima aperiam architecto adipisci harum modi? Ipsa quisquam aperiam fuga non dolorum delectus! Incidunt quos dolorum deleniti eum cumque nemo, error reprehenderit facilis, quasi aperiam odio.",
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    longDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     technologies: ["./images/htmltag.png", "./images/rubydesk23&4.png", "./images/csstag.png", "./images/javascripttag.png"],
     live: "https://www.google.com/",
     source: "https://github.com/",
-}
+  }
 ];
 
+// Card templates
 
+const cardsFixed = (properties, identifier) => `<div class="cards${properties.reversed ? ' deskReverse' : ''}">1
+  <div>2
+  <img class="deskImage" src="${properties.imageForDesk}" alt="${properties.name} Work" />
+  </div>2
+  <div class="left-block">3
+    <h2>${properties.name}</h2>
+    <div>4<img class="canopyDesk" src="${properties.frame}" alt=""></div>4
+    <p class="parrDesk">${properties.description}</p>
+    <ul class="tags">
+      ${properties.technologies.map((tag) => `<li><img class="programs" src="${tag}" alt=""></li>`).join('')}
+    </ul>
+    <div class="popUpFooter">5
+    <button class="butt openPopUp" data-content-id="${identifier}">See project</button>
+    </div>5
+    </div>3
+  </div>2
+</div>1
+`;
 
-// const body = document.querySelector('body');
-// const section = document.createElement('section');
-// body.appendChild(section);
-//   section.innerHTML = `
-//   <div class="cards">
-//   <div>
-//       <img class="mobileImage" src="./images/orange.snapshot.png" alt="">
-//       <img class="deskImage" src="./images/card1desk .png" alt="">
-//   </div>
-//   <div class="left-block">
-//       <h2 class="titleMobile">POPUP</h2>
-//       <h2 class="titleDesk">Tonic</h2>
-//       <div><img class="canopyMobile" src="./images/Frame 2.png" alt=""></div>
-//       <div><img class="canopyDesk" src="./images/Frame 2.png" alt=""></div>
-//       <p class="parrMobile">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-//       <p class="parrDesk">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-//       <ul class="tags">
-//           <li><img class="programs" src="./images/htmltag.png" alt=""></li>
-//           <li><img class="programs" src="./images/csstag.png" alt=""></li>
-//           <li><img class="programs" src="./images/javascripttag.png" alt=""></li>
-//       </ul>
-//       <div>
-//           <button class="popupbutton">See project</button>
-//       </div>
-//   </div>
-//   </div>
-// `;
+// Card templates
+const cardsPopUp = (properties) => `
+  <div class="popUpCard">1
+    <div class="cards">2
+      <div class="popUpHeader">3
 
+        <button class="closePopUp"><img id="thisImage" src="./images/close-Button-Popup.png" alt="Close PopUp" />
+        </button>
 
-// const open = document.querySelector('.popupbutton');
-// open.addEventListener('click', ()=> {
-//     const main = document.createElement('div');
-//     main.className = 'main';
-//     const popup = document.createElement('div');
-//     popup.className = 'popup'
-//     popup.innerHTML = `
-//     <div class="cards">
-//                 <div>
-//                     <img class="mobileImage" src="./images/orange.snapshot.png" alt="">
-//                     <img class="deskImage" src="./images/card1desk .png" alt="">
-//                 </div>
-//                 <div class="left-block">
-//                     <h2 class="titleMobile">POPUP</h2>
-//                     <h2 class="titleDesk">Tonic</h2>
-//                     <div><img class="canopyMobile" src="./images/Frame 2.png" alt=""></div>
-//                     <div><img class="canopyDesk" src="./images/Frame 2.png" alt=""></div>
-//                     <p class="parrMobile">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-//                     <p class="parrDesk">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-//                     <ul class="tags">
-//                         <li><img class="programs" src="./images/htmltag.png" alt=""></li>
-//                         <li><img class="programs" src="./images/csstag.png" alt=""></li>
-//                         <li><img class="programs" src="./images/javascripttag.png" alt=""></li>
-//                     </ul>
-//                     <div>
-//                         <button class="close">Close</button>
-//                     </div>
-//                 </div>
-//             </div>
-//     `;
-//     main.appendChild(popup);
-//     body.appendChild(main);
+        <h2>${data.title}</h2>
 
-//     const close = document.querySelector('.close');
-//     close.addEventListener('click', ()=> {
-//       body.removeChild(main);
-//     })
-// });
+        <div>4
+        <img class="canopyDesk" src="${properties.frame}" alt="">
+        </div>4
+      </div>3
+
+      <img class="deskImage" src="${properties.imageForDesk}" alt='${properties.name} Work" />
+
+    <div class="left-block">5
+
+      <p class="parrDesk">${properties.description}</p>
+
+      <ul class="tags">
+      ${properties.technologies.map((tag) => `<li><img class="programs" src="${tag}" alt=""/></li>`).join('')}
+      </ul>
+
+      <div class="popUpFooter">6
+
+      <a href="${properties.live}"><button class="butt Live">div>See Live</div><img src="./images/Live-icon-demo.svg" alt=""></button></a>
+      <a href="${properties.source}"><button class="butt Source"><div>See Source</div><img src="./images/Source-icon-github.png" alt="">
+      </button></a>
+
+      </div>6
+      </div>5
+    </div>2
+  </div>1
+  `;
+
+  // Cards Event Listeners and Compononent
+  
+  const projectsContainer = document.querySelector("#creations");
+  const popUpContainer = document.querySelector("#popUpContainer");
+
+  cardProperties.forEach((data, i) => {
+    projectsContainer.innerHTML += cardsFixed(data, i);
+  });
+
+  const openPopUpButtons = document.querySelectorAll('.openPopUp');
+
+  openPopUpButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+
+    const popUpId = button.dataset.contentId;
+    popUpContainer.innerHTML = cardsPopUp(cardProperties[popUpId]);
+    popUpContainer.classList.add('openUp');
+
+    const closePopUpButton = popUpContainer.querySelector('.closePopUp');
+    closePopUpButton.addEventListener('click', () => {
+      popUpContainer.classList.remove('openUp');
+    });
+  });
+});
