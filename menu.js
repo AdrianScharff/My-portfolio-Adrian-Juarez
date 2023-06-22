@@ -40,14 +40,3 @@ function chameleon() {
 window.addEventListener('scroll', chameleon);
 
 // This is for the Pop Up Windows
-
-const cardsData = [
-  {
-  name: 
-  description:
-  image:
-  technologies:
-  live:
-  source:
-  }
-]
