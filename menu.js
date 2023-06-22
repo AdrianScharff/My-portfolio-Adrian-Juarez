@@ -97,9 +97,9 @@ const cardProperties = [
   }
 ];
 
-// Card templates
+// Card template
 
-const cardsFixed = (properties, identifier) => `<div class="cards${properties.reversed ? ' deskReverse' : ''}">1
+const cardsFixed = (properties, index) => `<div class="cards${properties.reversed ? ' deskReverse' : ''}">1
   <div>2
   <img class="deskImage" src="${properties.imageForDesk}" alt="${properties.name} Work" />
   </div>2
@@ -111,14 +111,15 @@ const cardsFixed = (properties, identifier) => `<div class="cards${properties.re
       ${properties.technologies.map((tag) => `<li><img class="programs" src="${tag}" alt=""></li>`).join('')}
     </ul>
     <div class="popUpFooter">5
-    <button class="butt openPopUp" data-content-id="${identifier}">See project</button>
+    <button class="butt openPopUp" data-content-id="${index}">See project</button>
     </div>5
     </div>3
   </div>2
 </div>1
 `;
 
-// Card templates
+// PopUp template
+
 const cardsPopUp = (properties) => `
   <div class="popUpCard">1
     <div class="cards">2
@@ -127,7 +128,7 @@ const cardsPopUp = (properties) => `
         <button class="closePopUp"><img id="thisImage" src="./images/close-Button-Popup.png" alt="Close PopUp" />
         </button>
 
-        <h2>${data.title}</h2>
+        <h2>${properties.name}</h2>
 
         <div>4
         <img class="canopyDesk" src="${properties.frame}" alt="">
@@ -162,7 +163,7 @@ const cardsPopUp = (properties) => `
   const popUpContainer = document.querySelector("#popUpContainer");
 
   cardProperties.forEach((data, i) => {
-    projectsContainer.innerHTML += cardsFixed(data, i);
+    popUpContainer.innerHTML += cardsFixed(data, i);
   });
 
   const openPopUpButtons = document.querySelectorAll('.openPopUp');
