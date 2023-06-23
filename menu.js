@@ -35,6 +35,8 @@ window.addEventListener('scroll', chameleon);
 
 // This is for the Pop Up Windows
 
+const popUpContainer = document.querySelector('.popUpContainer')
+
 const cardsData = [
   {
     Name: 'Tonic',
@@ -45,6 +47,7 @@ const cardsData = [
     SeeProject: 'See project',
     Live: 'https://www.google.com',
     Source: 'https://github.com',
+    CloseButton: './images/closePopUpIcon.png',
   },
   {
     Name: 'Multi-Post-Stories',
@@ -55,6 +58,7 @@ const cardsData = [
     SeeProject: 'See project',
     Live: 'https://www.google.com',
     Source: 'https://github.com',
+    CloseButton: './images/closePopUpIcon.png',
   },
   {
     Name: 'Facebook 360',
@@ -65,6 +69,7 @@ const cardsData = [
     SeeProject: 'See project',
     Live: 'https://www.google.com',
     Source: 'https://github.com',
+    CloseButton: './images/closePopUpIcon.png',
   },
   {
     Name: 'Uber Navigation',
@@ -75,20 +80,21 @@ const cardsData = [
     SeeProject: 'See project',
     Live: 'https://www.google.com',
     Source: 'https://github.com',
+    CloseButton: './images/closePopUpIcon.png',
   }
 ];
 
 // Cards Template
 
 cardsData.forEach((card, index) => {
-let cardsNormal = `<div class="cards" id="cardfirst">
+let cardsNormal = `<div class="cards" >
 <div class="orange">
     <img class="mobileImage" src="${card.Image}" alt="">
     <img class="deskImage" src="${card.Image}" alt="">
 </div>
 <div class="left-block">
     <h2>${card.Name}</h2>
-    <div><img class="canopy" src="${card.Features}" alt=""></div>
+    <div><img class="canopy can${index+1}" src="${card.Features}" alt=""></div>
     <p>${card.Description}</p>
     <ul class="tags">
         <li><img class="programs" src="${card.Technologies[0]}"></li>
@@ -96,23 +102,25 @@ let cardsNormal = `<div class="cards" id="cardfirst">
         <li><img class="programs" src="${card.Technologies[2]}" alt=""></li>
     </ul>
     <div>
-        <button class="butt">${card.SeeProject}</button>
+        <button class="butt" data-card-index="${index}">${card.SeeProject}</button>
     </div>
 </div>
-</div>`
+</div>`;
 
   const works = document.querySelector('.works');
-  tempContainer = document.createElement('div');
+  const tempContainer = document.createElement('div');
   tempContainer.innerHTML = cardsNormal;
   const cardsNormalPage = tempContainer.firstChild;
   works.appendChild(cardsNormalPage);
 
-  const button = document.querySelector('.butt');
-  button.addEventListener('click', () => {
-    const popUpCard = generatePopUpCard(card);
-    document.body.appendChild(popUpCard);
-  })
-})
+  const button = cardsNormalPage.querySelector('.butt');
+    button.addEventListener('click', () => {
+    const cardIndex = button.dataset.cardIndex;
+    const popUpCard = generatePopUpCard(cardsData[cardIndex]);
+    popUpContainer.appendChild(popUpCard);
+    popUpContainer.classList.toggle('active');
+  });
+});
 
 function generatePopUpCard(card) {
   const popUpCard = document.createElement('div');
@@ -120,8 +128,11 @@ function generatePopUpCard(card) {
 
   popUpCard.innerHTML = 
   `<div class="popUpContent">
-    <h2>${card.Name}</h2>
-    <button class="popUpClose">Close</button>
+     <div class="topPopUp">
+       <h2>${card.Name}</h2>
+       <img src="${card.CloseButton}" alt="">
+     </div>
+  <button class="popUpClose"></button>
     <div><img class="canopy" src="${card.Features}" alt=""></div>
     <div class="orange">
       <img class="mobileImage" src="${card.Image}" alt="">
@@ -132,14 +143,14 @@ function generatePopUpCard(card) {
         ${generatePopUpTags(card.Technologies)}
     </ul>
     <div>
-        <a class="popUpLink" href="${card.Live}" target="_blank">See Live</a>
-        <a class="popUpLink" href="${card.Source}" target="_blank">View Source</a>
+        <a class="popUpLink" href="${card.Live}" target="_blank"><button>See Live</button></a>
+        <a class="popUpLink" href="${card.Source}" target="_blank"><button>View Source</button></a>
     </div>
   </div>`;
 
   const popUpCloseButton = popUpCard.querySelector('.popUpClose');
   popUpCloseButton.addEventListener('click', () => {
-    popUpCard.remove();
+    popUpContainer.classList.toggle('active');
   });
 
   return popUpCard;
