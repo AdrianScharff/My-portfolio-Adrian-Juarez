@@ -41,6 +41,8 @@ const cardsData = [
   {
     Name: 'Tonic',
     Description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    LongDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    LongDescriptionDesk: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
     Image: './images/card1desk.png',
     Features: './images/canopydesk1.png',
     Technologies: ['./images/htmltag.png', './images/csstag.png','./images/javascripttag.png','./images/rubytag.png'],
@@ -52,6 +54,8 @@ const cardsData = [
   {
     Name: 'Multi-Post-Stories',
     Description: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+    LongDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    LongDescriptionDesk: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
     Image: './images/card2desk.png',
     Features: './images/canopydesk2&3.png',
     Technologies: ['./images/htmltag.png', './images/csstag.png','./images/javascripttag.png','./images/rubytag.png'],
@@ -63,6 +67,8 @@ const cardsData = [
   {
     Name: 'Facebook 360',
     Description: 'Exploring the future of media in Facebook\'s first Virtual Reality app\; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    LongDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    LongDescriptionDesk: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
     Image: './images/card3desk.png',
     Features: './images/canopydesk2&3.png',
     Technologies: ['./images/htmltag.png', './images/csstag.png','./images/javascripttag.png','./images/rubytag.png'],
@@ -74,6 +80,8 @@ const cardsData = [
   {
     Name: 'Uber Navigation',
     Description: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    LongDescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    LongDescriptionDesk: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br><br></br>Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s.',
     Image: './images/card4desk.png',
     Features: './images/canopydesk4.png',
     Technologies: ['./images/htmltag.png', './images/csstag.png','./images/javascripttag.png','./images/rubytag.png'],
@@ -130,21 +138,26 @@ function generatePopUpCard(card) {
   `<div class="popUpContent">
      <div class="topPopUp">
        <h2>${card.Name}</h2>
-       <img src="${card.CloseButton}" alt="">
+       <img class="popUpClose" src="${card.CloseButton}" alt="">
      </div>
-  <button class="popUpClose"></button>
     <div><img class="canopy" src="${card.Features}" alt=""></div>
     <div class="orange">
       <img class="mobileImage" src="${card.Image}" alt="">
       <img class="deskImage" src="${card.Image}" alt="">
     </div>
-    <p>${card.Description}</p>
+    <div class"popFooterDesk">
+    <p class"popParMobile">${card.LongDescription}</p>
+    <p class="popParDesk">${card.LongDescriptionDesk}</p>
+    <div class="popFooterDeskRight">
     <ul class="popUpTags">
         ${generatePopUpTags(card.Technologies)}
     </ul>
-    <div>
-        <a class="popUpLink" href="${card.Live}" target="_blank"><button>See Live</button></a>
-        <a class="popUpLink" href="${card.Source}" target="_blank"><button>View Source</button></a>
+    <img class="popSeparator" src="./images/sepPopUpFooter.png" alt="">
+       <div class="footerButtonsContainer">
+        <a class="popUpLink" href="${card.Live}" target="_blank"><button class="footerButtons">See Live</button></a>
+        <a class="popUpLink" href="${card.Source}" target="_blank"><button class="footerButtons">See Source</button></a>
+      </div>
+      </div>
     </div>
   </div>`;
 
@@ -158,6 +171,6 @@ function generatePopUpCard(card) {
 
   function generatePopUpTags(technologies) {
     return technologies
-    .map((technology) => `<li><img class="programs" src="${technology}"></li>`)
+    .map((technology, index) => `<li><img class="programs pro${index}" src="${technology}"></li>`)
     .join('');
   }
