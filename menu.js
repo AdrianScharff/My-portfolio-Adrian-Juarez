@@ -93,11 +93,12 @@ const cardsData = [
 ];
 
 // Cards Template
-// function generatePopUpTags(technologies) {
-//   return technologies
-//     .map((technology, index) => `<li><img class="programs pro${index}" src="${technology}"></li>`)
-//     .join('');
-// }
+
+function generatePopUpTags(technologies) {
+  return technologies
+    .map((technology, index) => `<li><img class="programs pro${index}" src="${technology}"></li>`)
+    .join('');
+}
 
 function generatePopUpCard(card) {
   const popUpCard = document.createElement('div');
