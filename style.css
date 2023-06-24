@@ -684,22 +684,39 @@ header ul {
   padding-right: 1rem;
 }
 
-.footerButtonsContainer a {
-  border: none;
-}
-
 .footerButtons {
-  width: 8rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  width: 8.7rem;
+  height: 3.2rem;
   font-family: 'Poppins';
-  font-size: 1.0625rem;
+  font-size: 0.926rem;
   color: #6070ff;
   padding: 0.75rem;
   background: #fff;
   border: 0.0625rem solid #6070ff;
   border-radius: 0.5rem;
   cursor: pointer;
-  padding-left: 0;
   margin-left: 0;
+}
+
+.footerButtons:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+.footerButtons:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+.footerButtons:disabled {
+  background: #fff;
+  color: #5e6c84;
+  border: 0.0625rem solid #c1c7d0;
+  cursor: not-allowed;
 }
 
 /* media queries
@@ -1241,8 +1258,8 @@ for desktop */
 
   .popSeparator {
     width: 10rem;
-    padding-bottom: 0;
-    padding-top: 0;
+    padding-bottom: 0.6rem;
+    padding-top: 0.5rem;
   }
 
   .popFooterDeskRight {
@@ -1271,17 +1288,20 @@ for desktop */
   }
 
   .footerButtonsContainer {
-    padding-top: 0;
-    top: 0;
-    margin-top: 0;
+    gap: 0.5rem;
   }
 
   .footerButtons {
     border-radius: 0.3rem;
     width: 5rem;
-    height: 1rem;
+    height: 1.5rem;
     font-size: 0.6rem;
     padding: 0 0;
+    gap: 0.5rem;
+  }
+
+  .footerButtons .butImg {
+    width: 0.5rem;
   }
 }
 

@@ -123,8 +123,8 @@ function generatePopUpCard(card) {
     </ul>
     <img class="popSeparator" src="./images/sepPopUpFooter.png" alt="">
        <div class="footerButtonsContainer">
-        <a class="popUpLink" href="${card.Live}" target="_blank"><button class="footerButtons">See Live</button></a>
-        <a class="popUpLink" href="${card.Source}" target="_blank"><button class="footerButtons">See Source</button></a>
+        <a class="popUpLink" href="${card.Live}" target="_blank"><button class="footerButtons"><div class="butSee">See Live</div><img class="butImg" src="./images/SourcePopIcon.png" alt=""></button></a>
+        <a class="popUpLink" href="${card.Source}" target="_blank"><button class="footerButtons"><div class="butSee">See Source</div><img class="butImg" src="./images/LivePopIcon.png" alt""></button></a>
       </div>
       </div>
     </div>
