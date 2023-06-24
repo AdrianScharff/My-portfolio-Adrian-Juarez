@@ -535,24 +535,29 @@ header ul {
   border: 0.0625rem solid #c1c7d0;
   cursor: not-allowed;
 }
+
 @media (min-width: 527px) and (max-width: 767px) {
   .cards {
     height: 113%;
   }
+
   .works {
     height: 220rem;
   }
 }
+
 @media (max-width: 547px) {
   .can2 {
     margin-top: 3rem;
   }
 }
+
 @media (max-width: 409px) {
   .can3 {
     margin-top: 3rem;
   }
 }
+
 @media (max-width: 481px) {
   .can4 {
     margin-top: 3rem;
@@ -560,7 +565,8 @@ header ul {
 }
 
 @media (min-width: 768px) and (max-width: 914px) {
-  #h2card2, #h2card4 {
+  #h2card2,
+  #h2card4 {
     width: 11rem;
     white-space: wrap;
     line-height: 1.5rem;
@@ -592,7 +598,6 @@ header ul {
 }
 
 .popUpCard {
-  position: relative;
   display: flex;
   justify-content: center;
   position: fixed;
@@ -618,7 +623,7 @@ header ul {
   justify-content: space-between;
 }
 
-.popUpCard h2 {
+.popUpCard .popEichTwo {
   font-size: 2rem;
   padding-top: 1rem;
   line-height: 2.2rem;
@@ -1192,9 +1197,11 @@ for desktop */
     -ms-transform: scale(2);
     -o-transform: scale(2);
   }
+
   /* Desktop Dynamic Cards Normal */
 
-  .thecard2, .thecard4 {
+  .thecard2,
+  .thecard4 {
     display: flex;
     flex-direction: row-reverse;
   }
@@ -1206,7 +1213,7 @@ for desktop */
     width: 40rem;
   }
 
-  .popUpContent h2 {
+  .popUpContent .popEichTwo {
     white-space: normal;
   }
 
@@ -1244,6 +1251,7 @@ for desktop */
     display: flex;
     flex-direction: column;
   }
+
   .popUpTags {
     display: flex;
     flex-wrap: wrap;
@@ -1252,11 +1260,11 @@ for desktop */
     gap: 1rem;
     padding-bottom: 0;
   }
-  
+
   .popUpTags li {
     list-style: none;
   }
-  
+
   .popUpTags li img {
     max-width: 4.5rem;
     height: 1.2rem;
@@ -1273,9 +1281,8 @@ for desktop */
     width: 5rem;
     height: 1rem;
     font-size: 0.6rem;
-    padding: 0rem 0rem;
+    padding: 0 0;
   }
-  
 }
 
 @keyframes rotation {
