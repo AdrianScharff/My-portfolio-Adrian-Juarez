@@ -589,6 +589,7 @@ header ul {
   width: 100vw;
   height: 101vh;
   background-color: rgba(8, 7, 36, 0.397);
+  backdrop-filter: blur(8px);
   background-position: center;
   z-index: 999;
   margin-left: 0;
