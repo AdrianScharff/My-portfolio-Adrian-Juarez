@@ -7,8 +7,8 @@ const contactSection = document.querySelector('#contact');
 const hamburgerBars = document.querySelectorAll('.bar');
 
 function burgerToClose() {
-  hamburger.classList.toggle('active');
   fullMenu.classList.toggle('active');
+  hamburger.classList.toggle('active');
 }
 
 hamburger.addEventListener('click', burgerToClose);
