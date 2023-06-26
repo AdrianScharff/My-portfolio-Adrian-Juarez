@@ -94,8 +94,6 @@ const cardsData = [
 
 // Cards Template
 
-// Uncomment the 5 lines below and remove this line and empty lines
-
 function generatePopUpTags(technologies) {
   return technologies
     .map((technology, index) => `<li><img class="programs pro${index}" src="${technology}"></li>`)
