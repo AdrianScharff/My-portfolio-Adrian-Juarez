@@ -184,7 +184,7 @@ error.innerHTML = 'Your email should be in lower case';
 
 form.addEventListener('submit', (e) => {
   if (mail.value.toLowerCase() !== mail.value) {
-  subButton.appendChild(error);
   e.preventDefault();
+  subButton.appendChild(error);
   }
 })
