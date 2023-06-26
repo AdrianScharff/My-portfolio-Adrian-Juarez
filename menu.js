@@ -173,3 +173,18 @@ cardsData.forEach((card, index) => {
     popUpContainer.classList.toggle('active');
   });
 });
+
+// This is for the contact form
+
+const form = document.querySelector('#Contact-form');
+const mail = document.querySelector('#mail');
+const subButton = document.querySelector('.button');
+const error = document.createElement('div');
+error.innerHTML = 'Your email should be in lower case';
+
+form.addEventListener('submit', (e) => {
+  if (mail.value.toLowerCase() !== mail.value) {
+  subButton.appendChild(error);
+  e.preventDefault();
+  }
+})
