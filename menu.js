@@ -20,17 +20,15 @@ function chameleon() {
   const scrollPosition = window.scrollY || window.pageYOffset;
   const contactSectionPosition = contactSection.offsetTop;
 
-  // Uncomment the 9 lines below and delete this line
-  
-  // if (scrollPosition >= contactSectionPosition) {
-  //   hamburgerBars.forEach((bar) => {
-  //     bar.style.backgroundColor = 'black';
-  //   });
-  // } else {
-  //   hamburgerBars.forEach((bar) => {
-  //     bar.style.removeProperty('background-color');
-  //   });
-  // }
+  if (scrollPosition >= contactSectionPosition) {
+    hamburgerBars.forEach((bar) => {
+      bar.style.backgroundColor = 'black';
+    });
+  } else {
+    hamburgerBars.forEach((bar) => {
+      bar.style.removeProperty('background-color');
+    });
+  }
 }
 
 window.addEventListener('scroll', chameleon);
