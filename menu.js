@@ -178,13 +178,14 @@ cardsData.forEach((card, index) => {
 
 const form = document.querySelector('#Contact-form');
 const mail = document.querySelector('#mail');
-const subButton = document.querySelector('.button');
-const error = document.createElement('div');
-error.innerHTML = 'Your email should be in lower case';
+const inputList = document.querySelector('#inputList');
+const error = document.createElement('span');
+error.innerHTML = '*Your email should be in lower case';
+error.classList.add('error')
 
 form.addEventListener('submit', (e) => {
   if (mail.value.toLowerCase() !== mail.value) {
   e.preventDefault();
-  subButton.appendChild(error);
+  inputList.appendChild(error);
   }
 })
