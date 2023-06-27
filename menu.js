@@ -189,3 +189,18 @@ form.addEventListener('submit', (e) => {
     inputList.appendChild(error);
   }
 });
+
+// This is for the local storage saving
+
+const name = document.querySelector('#name');
+const message = document.querySelector(#msg);
+
+const formData = {
+  name: name.value,
+  mail: mail.value;
+  message: message.value
+}
+
+function stringify(data) {
+JSON.stringify(data);
+}
