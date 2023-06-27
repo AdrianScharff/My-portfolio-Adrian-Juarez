@@ -536,6 +536,14 @@ header ul {
   cursor: not-allowed;
 }
 
+.error {
+  display: flex;
+  background-color: white;
+  margin-top: -1rem;
+  padding: 0.2rem;
+  border: 0.2rem solid red;
+}
+
 @media (min-width: 527px) and (max-width: 767px) {
   .cards {
     height: 113%;
@@ -571,6 +579,12 @@ header ul {
     white-space: wrap;
     line-height: 1.5rem;
     padding-bottom: 3rem;
+  }
+}
+
+@media (min-width: 632px) and (max-width: 768px) {
+  #contact {
+    height: 60rem;
   }
 }
 
@@ -1214,6 +1228,10 @@ for desktop */
     -moz-transform: scale(2);
     -ms-transform: scale(2);
     -o-transform: scale(2);
+  }
+
+  .error {
+    font-size: 0.5rem;
   }
 
   /* Desktop Dynamic Cards Normal */
