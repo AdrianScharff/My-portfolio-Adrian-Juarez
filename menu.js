@@ -35,8 +35,6 @@ window.addEventListener('scroll', chameleon);
 
 // This is for the Pop Up Windows
 
-const popUpContainer = document.querySelector('.popUpContainer');
-
 const cardsData = [
   {
     Name: 'Tonic',
@@ -93,6 +91,7 @@ const cardsData = [
 ];
 
 // Cards Template
+const popUpContainer = document.querySelector('.popUpContainer');
 
 function generatePopUpTags(technologies) {
   return technologies
@@ -154,7 +153,7 @@ cardsData.forEach((card, index) => {
         <li><img class="programs" src="${card.Technologies[2]}" alt=""></li>
     </ul>
     <div>
-        <button class="butt" data-card-index="${index}">${card.SeeProject}</button>
+        <button class="butt" id="${index}">${card.SeeProject}</button>
     </div>
 </div>
 </div>`;
@@ -167,7 +166,7 @@ cardsData.forEach((card, index) => {
 
   const button = cardsNormalPage.querySelector('.butt');
   button.addEventListener('click', () => {
-    const { cardIndex } = button.dataset;
+    const cardIndex = button.id;
     const popUpCard = generatePopUpCard(cardsData[cardIndex]);
     popUpContainer.appendChild(popUpCard);
     popUpContainer.classList.toggle('active');
@@ -189,3 +188,37 @@ form.addEventListener('submit', (e) => {
     inputList.appendChild(error);
   }
 });
+
+// This is for the local storage saving
+
+const nameI = document.querySelector('#name');
+const messageI = document.querySelector('#msg');
+const subButton = document.querySelector('#subButton');
+
+// Function to save the form data to local storage
+const saveFormData = () => {
+  const formData = {
+    name: nameI.value,
+    email: mail.value,
+    message: messageI.value,
+  };
+
+  // Save the form data as a simple object in local storage
+  localStorage.setItem('formDataaa', JSON.stringify(formData));
+};
+
+// Add event listeners for input changes and form submission
+nameI.addEventListener('input', saveFormData);
+mail.addEventListener('input', saveFormData);
+messageI.addEventListener('input', saveFormData);
+subButton.addEventListener('click', saveFormData);
+
+// Check if there is any data in local storage
+const storedData = localStorage.getItem('formDataaa');
+
+if (storedData) {
+  const { name, email, message } = JSON.parse(storedData);
+  nameI.value = name;
+  mail.value = email;
+  messageI.value = message;
+}
