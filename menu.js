@@ -35,8 +35,6 @@ window.addEventListener('scroll', chameleon);
 
 // This is for the Pop Up Windows
 
-const popUpContainer = document.querySelector('.popUpContainer');
-
 const cardsData = [
   {
     Name: 'Tonic',
@@ -93,6 +91,8 @@ const cardsData = [
 ];
 
 // Cards Template
+
+const popUpContainer = document.querySelector('.popUpContainer');
 
 function generatePopUpTags(technologies) {
   return technologies
