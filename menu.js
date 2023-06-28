@@ -192,15 +192,34 @@ form.addEventListener('submit', (e) => {
 
 // This is for the local storage saving
 
-const name = document.querySelector('#name');
-const message = document.querySelector(#msg);
+const nameI = document.querySelector('#name');
+const messageI = document.querySelector('#msg');
+const subButton = document.querySelector('#subButton');
 
-const formData = {
-  name: name.value,
-  mail: mail.value;
-  message: message.value
-}
+// Function to save the form data to local storage
+const saveFormData = () => {
+  const formData = {
+  name: nameI.value,
+  email: mail.value,
+  message: messageI.value
+  };
 
-function stringify(data) {
-JSON.stringify(data);
-}
+// Save the form data as a simple object in local storage
+  localStorage.setItem('formDataaa', JSON.stringify(formData))
+};
+
+// Add event listeners for input changes and form submission
+nameI.addEventListener('input', saveFormData);
+mail.addEventListener('input', saveFormData);
+messageI.addEventListener('input', saveFormData);
+subButton.addEventListener('click', saveFormData);
+
+// Check if there is any data in local storage
+const storedData = localStorage.getItem('formDataaa');
+
+// if (storedData) {
+//   const {name, email, message} = JSON.parse(storedData);
+//   nameI.value = name;
+//   mail.value = email;
+//   messageI.value = message;
+// }
