@@ -200,7 +200,7 @@ const subButton = document.querySelector('#subButton');
 const saveFormData = () => {
   const formData = {
   name: nameI.value,
-  email: mail.value,
+  email: mail.value
   message: messageI.value
   };
 
