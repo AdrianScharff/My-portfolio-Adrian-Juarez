@@ -35,6 +35,8 @@ window.addEventListener('scroll', chameleon);
 
 // This is for the Pop Up Windows
 
+
+
 const cardsData = [
   {
     Name: 'Tonic',
@@ -91,9 +93,7 @@ const cardsData = [
 ];
 
 // Cards Template
-
 const popUpContainer = document.querySelector('.popUpContainer');
-
 function generatePopUpTags(technologies) {
   return technologies
     .map((technology, index) => `<li><img class="programs pro${index}" src="${technology}"></li>`)
