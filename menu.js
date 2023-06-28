@@ -217,9 +217,9 @@ subButton.addEventListener('click', saveFormData);
 // Check if there is any data in local storage
 const storedData = localStorage.getItem('formDataaa');
 
-// if (storedData) {
-//   const {name, email, message} = JSON.parse(storedData);
-//   nameI.value = name;
-//   mail.value = email;
-//   messageI.value = message;
-// }
+if (storedData) {
+  const {name, email, message} = JSON.parse(storedData);
+  nameI.value = name;
+  mail.value = email;
+  messageI.value = message;
+}
