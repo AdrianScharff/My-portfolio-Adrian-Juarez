@@ -166,8 +166,8 @@ cardsData.forEach((card, index) => {
 
   const button = cardsNormalPage.querySelector('.butt');
   button.addEventListener('click', () => {
-    const cardIndex = button.id;
-    const popUpCard = generatePopUpCard(cardsData[cardIndex]);
+    const cardsIndex = button.id;
+    const popUpCard = generatePopUpCard(cardsData[cardsIndex]);
     popUpContainer.appendChild(popUpCard);
     popUpContainer.classList.toggle('active');
   });
